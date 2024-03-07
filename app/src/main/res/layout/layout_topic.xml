@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/ll_topic"
+    android:background="@drawable/round_outline_fb"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/topic_serial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/segoeuil"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeuil"
+            android:layout_marginLeft="8dp"
+            android:layout_weight=".9"
+            android:maxLines="1"
+            android:lines="1"
+            android:text="Topic"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/v_classesbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_view"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_morng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/segoeuil"
+            android:text=" "
+            android:textColor="@color/gm_text"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/segoeuil"
+            android:text="Rakesh Jaiswal"
+            android:textColor="@color/gm_text"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeuil"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="What Would You like to learn today?"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/svSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/capsule_shape"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:backgroundTint="@color/feed_bg"
+            app:divider="@color/colorAccent"
+            android:focusable="false"
+            app:iconifiedByDefault="false">
+        </androidx.appcompat.widget.SearchView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/_16sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_customdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/_16sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/go_live_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@color/backColor"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+                style="?android:attr/buttonBarButtonStyle"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_12sdp"
+                android:text="Join Live Classes" />
+        </LinearLayout>
+
+
+
+
+
+        <!-- <TextView
+             android:id="@+id/tv_invite"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text=" Invite "
+             android:textAllCaps="true"
+             android:visibility="gone"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold" />-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <!-- <TextView
+             android:id="@+id/tv_videos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text="Videos"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:visibility="gone" />
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rv_videos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginTop="4dp"
+             android:layout_marginRight="@dimen/_16sdp">
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+         <TextView
+             android:id="@+id/tv_motivational"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text="Motivational Videos"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:visibility="gone" />
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rv_moti_videos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginRight="@dimen/_16sdp">
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+         <TextView
+             android:id="@+id/tv_free_packges"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text="Free Packages"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:visibility="gone" />
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rv_free_packages"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:layout_marginRight="@dimen/_16sdp"
+             android:layout_marginTop="4dp">
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+         <TextView
+             android:id="@+id/tv_news"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text="News &amp; updates"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rv_news"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginTop="4dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:layout_marginRight="@dimen/_16sdp">
+
+         </androidx.recyclerview.widget.RecyclerView>
+
+
+         <TextView
+             android:id="@+id/tv_teacher"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text="Teacher List"
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:visibility="gone" />
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rv_teacher_list"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginTop="4dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:layout_marginRight="@dimen/_16sdp" />
+
+
+         <TextView
+             android:id="@+id/tv_invite"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginTop="30dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:fontFamily="@font/segoeuil"
+             android:text=" Invite "
+             android:textAllCaps="true"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/rv_invite"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_16sdp"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginTop="4dp"
+             android:layout_marginEnd="@dimen/_16sdp"
+             android:layout_marginRight="@dimen/_16sdp"
+             android:layout_marginBottom="30dp">
+
+         </androidx.recyclerview.widget.RecyclerView>-->
+
+    </LinearLayout>
+
+
+</ScrollView>

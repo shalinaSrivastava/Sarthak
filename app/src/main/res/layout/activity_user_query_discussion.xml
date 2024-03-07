@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gen_white"
+        android:fontFamily="@font/segoeuil"
+        android:padding="10dp"
+        android:text="Query Discussion"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msgBox"
+        android:layout_below="@+id/screen_title" />
+
+    <LinearLayout
+        android:id="@+id/msgBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_outline_fb"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1cacabab"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/et_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/segoeuil"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:maxHeight="150dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/send_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/sent_48" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

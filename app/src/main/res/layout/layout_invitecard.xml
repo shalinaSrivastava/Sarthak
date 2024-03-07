@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_subject"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="4dp"
+    android:clickable="true"
+    android:foreground="@drawable/ripple_effect"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/invite_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:maxLines="2"
+                android:textSize="@dimen/_12sdp"
+                android:text="Invite friends and get Package free"
+
+                android:textColor="@color/black_overlay" />
+
+            <ImageView
+                android:id="@+id/img_subject"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end"
+                android:layout_weight=".2"
+                android:src="@drawable/ic_subject" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

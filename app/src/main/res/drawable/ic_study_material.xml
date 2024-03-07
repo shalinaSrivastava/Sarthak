@@ -1,0 +1,15 @@
+<vector android:autoMirrored="true" android:height="24dp"
+    android:viewportHeight="120" android:viewportWidth="120"
+    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FFE54E" android:pathData="M98.3,118H19.3c-4.3,0 -7.9,-3.5 -7.9,-7.9V10.9c0,-4.3 3.5,-7.9 7.9,-7.9h79.1c4.3,0 7.9,3.5 7.9,7.9v99.3C106.2,114.5 102.7,118 98.3,118z"/>
+    <path android:fillColor="#FECC29" android:pathData="M98.3,3H58.6v115h39.8c4.3,0 7.9,-3.5 7.9,-7.9V10.9C106.2,6.5 102.7,3 98.3,3z"/>
+    <path android:fillColor="#384949" android:pathData="M21.3,24.6H7.8c-1.9,0 -3.4,-1.5 -3.4,-3.4s1.5,-3.4 3.4,-3.4h13.5c1.9,0 3.4,1.5 3.4,3.4S23.2,24.6 21.3,24.6z"/>
+    <path android:fillColor="#384949" android:pathData="M21.3,40.3H7.8c-1.9,0 -3.4,-1.5 -3.4,-3.4s1.5,-3.4 3.4,-3.4h13.5c1.9,0 3.4,1.5 3.4,3.4S23.2,40.3 21.3,40.3z"/>
+    <path android:fillColor="#384949" android:pathData="M21.3,56H7.8c-1.9,0 -3.4,-1.5 -3.4,-3.4s1.5,-3.4 3.4,-3.4h13.5c1.9,0 3.4,1.5 3.4,3.4S23.2,56 21.3,56z"/>
+    <path android:fillColor="#384949" android:pathData="M21.3,71.7H7.8c-1.9,0 -3.4,-1.5 -3.4,-3.4S6,65 7.8,65h13.5c1.9,0 3.4,1.5 3.4,3.4S23.2,71.7 21.3,71.7z"/>
+    <path android:fillColor="#384949" android:pathData="M21.3,87.5H7.8c-1.9,0 -3.4,-1.5 -3.4,-3.4s1.5,-3.4 3.4,-3.4h13.5c1.9,0 3.4,1.5 3.4,3.4S23.2,87.5 21.3,87.5z"/>
+    <path android:fillColor="#384949" android:pathData="M21.3,103.2H7.8c-1.9,0 -3.4,-1.5 -3.4,-3.4s1.5,-3.4 3.4,-3.4h13.5c1.9,0 3.4,1.5 3.4,3.4S23.2,103.2 21.3,103.2z"/>
+    <path android:fillColor="#FEAC01" android:pathData="M91.7,80.7h15.7c2.5,0 4.5,-2 4.5,-4.5V62.7c0,-2.5 -2,-4.5 -4.5,-4.5H91.7c-6.2,0 -11.2,5 -11.2,11.2S85.5,80.7 91.7,80.7z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M81,45.9H36.1c-1.9,0 -3.4,-1.5 -3.4,-3.4v-18c0,-1.9 1.5,-3.4 3.4,-3.4H81c1.9,0 3.4,1.5 3.4,3.4v18C84.4,44.4 82.9,45.9 81,45.9z"/>
+    <path android:fillColor="#DEECF1" android:pathData="M81,21.2H58.6v24.7H81c1.9,0 3.4,-1.5 3.4,-3.4v-18C84.4,22.7 82.9,21.2 81,21.2z"/>
+</vector>

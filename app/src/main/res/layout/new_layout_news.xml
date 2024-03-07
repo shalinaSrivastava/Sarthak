@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_current_news"
+        android:layout_marginLeft="@dimen/feed_item_margin"
+        android:layout_marginRight="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="horizontal"
+       >
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:scaleType="fitCenter" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/feed_item_profile_info_padd" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:fontFamily="@font/segoeuil"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/timestamp"
+                    android:fontFamily="@font/segoeuil"
+                    android:textSize="@dimen/dimen_12sp" />
+                <TextView
+                    android:id="@+id/txtStatusMsg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeuil"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtUrl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/feed_item_status_pad_left_right"
+            android:paddingRight="@dimen/feed_item_status_pad_left_right"
+            android:visibility="gone"
+            android:textColorLink="@color/link" />
+
+        <ImageView
+            android:id="@+id/feedImage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

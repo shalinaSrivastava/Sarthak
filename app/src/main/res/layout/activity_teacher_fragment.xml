@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:rb_color="#0099CC"
+            app:rb_duration="3000"
+            app:rb_radius="7dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/ic_arrow" />
+        </com.skyfishjy.library.RippleBackground>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_student_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:visibility="gone"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_outline_fb">
+
+                <TextView
+                    android:id="@+id/class_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Students"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pichart"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="@dimen/_230sdp" />
+
+                <TextView
+                    android:id="@+id/total_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/primary_orange"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+                <TextView
+                    android:id="@+id/free_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+                <TextView
+                    android:id="@+id/priminum_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/green_light"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/chart_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@drawable/round_outline_fb">
+
+                <TextView
+                    android:id="@+id/class_id_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Students"
+                    android:textSize="@dimen/dimen_20sp"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pichart_one"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="@dimen/_230sdp" />
+
+                <TextView
+                    android:id="@+id/total_s_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/primary_orange"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+                <TextView
+                    android:id="@+id/free_s_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+                <TextView
+                    android:id="@+id/priminum_s_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/green_light"
+                    android:padding="@dimen/dimen_10dp"
+                    />
+            </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+        <TextView
+            android:id="@+id/tv_morng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/segoeuil"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="What Would You like to Teach today "
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/tv_motivational"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/segoeuil"
+            android:text="Motivational Videos"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_moti_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/segoeuil"
+            android:text="News &amp; updates"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/segoeuil"
+            android:text=" Invite "
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="30dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/content2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:rb_color="#0099CC"
+            app:rb_duration="3000"
+            app:rb_radius="7dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+
+            <ImageView
+                android:id="@+id/centerImage2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="100dp"
+                android:rotation="180"
+                app:srcCompat="@drawable/ic_arrow" />
+        </com.skyfishjy.library.RippleBackground>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

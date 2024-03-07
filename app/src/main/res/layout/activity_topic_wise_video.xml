@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.TopicWiseVideoActivity">
+
+
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:text="free Videos"
+        android:id="@+id/tv_free"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+
+    </TextView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+<!--
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Paid Videos"
+        android:id="@+id/tv_paid"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+
+    </TextView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_video_premiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

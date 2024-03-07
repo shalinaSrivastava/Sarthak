@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/toolbar2">
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=" Register as a Parent "
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_one_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:clipToPadding="true"
+                app:cardBackgroundColor="#fcfcfc"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="2dp"
+                card_view:cardBackgroundColor="#fcfcfc"
+                card_view:cardElevation="1dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableEnd="@drawable/person2"
+                        android:drawableRight="@drawable/person2"
+                        android:drawablePadding="8dp"
+                        android:hint=" Name"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editstuemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableEnd="@drawable/ic_email"
+                        android:drawableRight="@drawable/ic_email"
+                        android:drawablePadding="5dp"
+                        android:visibility="gone"
+                        android:hint=" Enter Child email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableEnd="@drawable/ic_phone"
+                        android:drawableRight="@drawable/ic_phone"
+                        android:drawablePadding="5dp"
+                        android:hint="Phone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editparent_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="20dp"
+                        android:drawableEnd="@drawable/ic_email"
+                        android:drawableRight="@drawable/ic_email"
+                        android:drawablePadding="5dp"
+                        android:hint=" Enter your email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:drawableEnd="@drawable/ic_password"
+                        android:drawableRight="@drawable/ic_password"
+                        android:drawablePadding="5dp"
+                        android:hint=" Enter your Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        app:passwordToggleEnabled="true" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_background"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/already_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Already have an Account?"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

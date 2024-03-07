@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userreply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/round_button_cornor">
+
+        <TextView
+            android:id="@+id/descussion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:fontFamily="@font/segoeuil"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Query"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+
+        <TextView
+            android:id="@+id/descussion_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:fontFamily="@font/segoeuil"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Query"
+            android:textColor="@color/black"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminreply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_button_cornor"
+        android:backgroundTint="#f4fabc">
+
+        <TextView
+            android:id="@+id/descussion_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoeuil"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Query"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

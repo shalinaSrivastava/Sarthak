@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_videos"
+    android:layout_width="220dp"
+    android:layout_height="140dp"
+    android:layout_margin="5dp">
+
+    <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/new_thumbnails"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slider"
+        android:elevation="10dp"
+        app:sriv_left_top_corner_radius="4dip"
+        app:sriv_right_top_corner_radius="4dip" />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/new_thumbnails"
+        android:background="#2b9fda"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:fontFamily="@font/segoeuil"
+        android:text="News title"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
+
+

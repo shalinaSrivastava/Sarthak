@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="Account Info" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/nameImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/person2" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/tv_name"
+                style="@style/profileDetailsMiniText"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:layout_toRightOf="@id/nameImageView"
+                android:text="developer" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/mobileImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/phoneicon" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:text="Mobile" />
+
+            <EditText
+                android:id="@+id/tv_mobile"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/mobileImageView"
+                android:gravity="end"
+                android:maxLength="10"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:text="+91-8129999999" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/emailImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_mail" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/profileDetailsMiniText"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="developer@appsnipp.com" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/addressImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_dassignment" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Class" />
+
+            <TextView
+                android:id="@+id/tv_course"
+                style="@style/profileDetailsMiniText"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@id/addressImageView"
+                android:text="Avenue 2nd Street NW SY." />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/dobImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/ic_gender" />
+
+            <TextView
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/dobImageView"
+                android:text="Category" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/profileDetailsMiniText"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_toRightOf="@id/dobImageView"
+                android:text="Student" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text=" Edit Profile"
+            android:id="@+id/btn_edit"
+            android:visibility="gone"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/White"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text=" Update Profile"
+            android:id="@+id/btn_update"
+            android:visibility="gone"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/White"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

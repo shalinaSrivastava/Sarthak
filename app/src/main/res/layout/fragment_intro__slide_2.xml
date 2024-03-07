@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/segoeuil"
+        android:gravity="center"
+        android:text="Online Classes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:fontFamily="@font/segoeuil"
+        android:gravity="center"
+        android:text="Learn every concept visually for a \n strong foundation"
+        android:textSize="@dimen/_14sdp">
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:padding="@dimen/_20sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onlineslider" />
+
+</RelativeLayout>
+

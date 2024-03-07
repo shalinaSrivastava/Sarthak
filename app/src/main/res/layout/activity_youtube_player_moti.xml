@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.YoutubePlayerActivity">
+
+
+  <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:id="@+id/exo_player_view">
+    </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+    android:layout_height="wrap_content"
+        android:layout_below="@+id/exo_player_view"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/share_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/ic_share"
+            android:contentDescription="@string/sahredata" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/ic_share"
+            android:visibility="gone"
+            android:contentDescription="@string/sahredata" />
+
+
+    </LinearLayout>
+-->
+    <!-- youtube player view to play videos -->
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+  <LinearLayout
+      android:id="@+id/line"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_10sdp"
+      android:layout_below="@+id/youtube_player_view"
+      android:orientation="horizontal">
+
+
+  <LinearLayout
+      android:id="@+id/share_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="@dimen/dimen_10dp"
+      >
+
+    <ImageView
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:src="@drawable/share"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_margin="3dp"
+        android:textSize="@dimen/dimen_15sp"
+        />
+
+
+
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/bookmark_v"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone"
+      android:padding="@dimen/dimen_10dp"
+      >
+
+    <ImageView
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:src="@drawable/bookmark"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bookmark"
+        android:layout_margin="3dp"
+        android:textSize="@dimen/dimen_15sp"
+        />
+
+
+
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:id="@+id/rat_us"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="@dimen/dimen_10dp"
+      >
+
+    <ImageView
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:src="@drawable/smily"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        android:layout_margin="3dp"
+        android:textSize="@dimen/dimen_15sp"
+        />
+
+
+  </LinearLayout>
+
+
+  </LinearLayout>
+    <ProgressBar
+        android:id="@+id/spinnerVideoDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+</RelativeLayout>

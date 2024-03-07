@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/menu_nav_profile" />
+
+
+    <item
+        android:id="@+id/nav_my_test_series"
+        android:icon="@drawable/ic_my_test_series"
+        android:visible="false"
+        android:title="@string/menu_my_test_series" />
+
+
+    <item
+        android:id="@+id/nav_buy_pack"
+        android:icon="@drawable/ic_sale"
+        android:title="@string/menu_buy_pack" />
+
+    <item
+        android:id="@+id/nav_book_study"
+        android:icon="@drawable/ic_study_material"
+        android:title="@string/menu_book_mark_study" />
+
+
+    <item
+        android:id="@+id/nav_daily_quiz"
+        android:icon="@drawable/ic_quiz"
+        android:visible="false"
+        android:title="@string/menu_daily_quizz" />
+
+    <!--<item
+        android:id="@+id/nav_videos"
+        android:icon="@drawable/ic_video"
+        android:title="@string/menu_ic_videos" />-->
+
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_notification"
+        android:visible="false"
+        android:title="@string/menu_me" />
+
+
+    <item
+        android:id="@+id/nav_scholarship"
+        android:icon="@drawable/ic_scholarship"
+        android:title="@string/menu_scholarship" />
+
+
+   <!-- <item
+        android:id="@+id/nav_scholarship_result"
+        android:icon="@drawable/ic_download"
+        android:title="@string/menu_sch_result" />
+-->
+    <item
+        android:id="@+id/nav_my_teacher"
+        android:icon="@drawable/ic_teacher_icon"
+        android:visible="false"
+        android:title="@string/menu_my_teacher" />
+
+    <item
+        android:id="@+id/nav_current_affairs"
+        android:icon="@drawable/ic_news"
+        android:visible="false"
+        android:title="@string/menu_daily_current_affairs" />
+
+
+    <item
+        android:id="@+id/nav_order_history"
+        android:icon="@drawable/ic_order_list"
+        android:title="@string/menu_order" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/wallet_100"
+        android:title="@string/menu_setting" />
+
+
+    <item
+        android:id="@+id/nav_contact_us"
+        android:icon="@drawable/ic_contact"
+        android:title="@string/menu_contact_us" />
+
+    <item
+        android:id="@+id/nav_share_app"
+        android:icon="@drawable/ic_share"
+        android:title="@string/menu_share_app" />
+
+
+
+    <item
+        android:id="@+id/nav_rate_us"
+        android:icon="@drawable/ic_rating"
+        android:title="@string/menu_rate_us" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/menu_logout" />
+
+
+</menu>

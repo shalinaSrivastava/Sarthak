@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lecturedekhoelearn.in">
+
+    <uses-feature
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.MICROPHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".preferences.AppController"
+        android:fullBackupOnly="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:allowBackup="false"
+        android:usesCleartextTraffic="false"
+        tools:replace="android:allowBackup,android:usesCleartextTraffic,android:theme"
+       >
+        <activity
+            android:name=".activity.LiveClass"
+            android:exported="false" />
+
+        <provider
+            android:name=".util.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.OptionsForVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bookmark.OptionsForBookmark"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.parentActivity.Video_player"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+        <activity android:name=".activity.PlayerActivity" />
+        <activity android:name=".activity.parentActivity.PStudentActivity" />
+        <activity android:name=".activity.NewCurrentAffairs" />
+        <activity
+            android:name=".activity.parentActivity.ParentDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartDailyQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ChildOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.OtpVerifyforChild"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.UserSchResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScholarshipResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyTeachersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScholarshipDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScholarshipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgotOtpVerify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubjectWiseTeacherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MotivationVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ParentSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoShowBookmarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyBookmarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MotiVationalVideoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestStart"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacherSection.StudentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.teacherSection.TeacherDashboard"
+            android:label="@string/title_activity_teacher_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Wallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TopicWiseVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TeacherListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MySeriesVideoDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DailyQuizActivity"
+            android:configChanges="uiMode"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.MyTestSeriesVideoActivity" />
+        <activity
+            android:name=".login.LoginAsParent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.IntroScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.YoutubePlayerActivity" />
+        <activity
+            android:name=".login.OtpVerifyforSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.SignupOtpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebBrowserPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CourseWiseTestSeriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyPurchasedTestSeriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PackageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyTestSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Contact_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StudentProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.newsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SeeAllNotication"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FullVideoScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.SocietyLevel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ClassVerified"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.teacherSection.TeacherLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.queryActivity.UserAllQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.queryActivity.userQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.queryActivity.UserQueryDiscussion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CurrentAffairsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartPaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" /> <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" /> <!-- [END fcm_default_channel] -->
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".SMSReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

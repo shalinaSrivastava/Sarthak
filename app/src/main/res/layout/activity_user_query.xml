@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/segoeuil"
+        android:text="Query"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msgBox" />
+
+    <LinearLayout
+        android:id="@+id/msgBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/round_outline_fb"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#1cacabab"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/tag_icon"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".1"
+                android:background="@drawable/tag_window_48" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight=".8"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/segoeuil"
+                android:gravity="left|center"
+
+                android:hint="Title"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".1"
+                android:clickable="true"
+                android:src="@drawable/ic_menu_camera"
+                app:civ_border_color="@color/grey"
+                app:civ_border_width="2dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1cacabab"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/et_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/segoeuil"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:maxHeight="150dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/send_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/sent_48" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

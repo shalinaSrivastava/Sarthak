@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_package"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:contentPadding="2dp">
+
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/p_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splashlogo" />
+
+        <TextView
+            android:id="@+id/tv_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/p_image"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_video_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_package_name"
+            android:layout_alignLeft="@+id/p_image"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_test_series"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_video_access"
+            android:layout_alignLeft="@+id/p_image"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_Counselling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_test_series"
+            android:layout_alignLeft="@+id/p_image"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p_image"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:lines="1"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_validity"
+            android:layout_marginLeft="15dp"
+            android:text=" "
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_actual_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_validity"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_discount_price"
+            android:text="ori Price"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_cash_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_actual_price"
+            android:layout_marginLeft="15dp"
+            android:text=" "
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_discount_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cash_back"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:text=" "
+            android:textSize="14sp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_discount_per"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:lines="3"
+                android:maxLines="3"
+                android:text=" "
+                android:textSize="14sp" />
+
+
+
+
+        <Button
+            android:layout_width="@dimen/_150sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_description"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Upgrade Plan Now"
+            android:id="@+id/tv_package_status"
+            android:padding="8dp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/White"
+            android:visibility="gone"
+            android:background="@drawable/capsule_shape"
+            android:layout_height="40dp">
+
+
+        </Button>
+
+        <Button
+            android:layout_width="@dimen/_150sdp"
+            android:layout_alignParentEnd="true"
+            android:text="Active Packages"
+            android:layout_below="@id/tv_description"
+            android:id="@+id/tv_package_active"
+            android:visibility="gone"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/White"
+            android:background="@drawable/capsule_shape"
+            android:backgroundTint="@color/green_light"
+            android:layout_height="40dp">
+
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

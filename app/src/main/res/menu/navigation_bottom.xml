@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:checked="true"
+        android:icon="@drawable/ic_home_dashboard"
+        android:title="@string/menu_home"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_mock_test"
+        android:checked="false"
+        android:icon="@drawable/ic_mock_test"
+        android:title="@string/menu_mock_test"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_doubts"
+        android:checked="false"
+        android:icon="@drawable/ic_doubtsdash"
+        android:title="@string/menu_doubts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_videos"
+        android:checked="false"
+        android:icon="@drawable/ic_video_dashboard"
+        android:title="@string/menu_videos"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_notification"
+        android:checked="false"
+        android:icon="@drawable/ic_notification_dashboard"
+        android:title="@string/menu_me"
+        app:showAsAction="ifRoom" />
+</menu>

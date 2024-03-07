@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/root_view"
+        android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    android:orientation="vertical"
+    android:background="@drawable/round_outline_fb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress"
+        android:fontFamily="@font/segoeuil"
+        android:textSize="@dimen/dimen_20sp"
+        android:textColor="@color/black"
+        android:padding="@dimen/dimen_10dp"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pichart"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_250sdp" />
+
+    <TextView
+        android:id="@+id/dtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Login : 10 March 10 am"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:padding="@dimen/_10sdp"/>
+
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:background="@drawable/round_outline_fb"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:background="@drawable/time"
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/last_logi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/segoeuil"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/dimen_15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Last Login"
+                    android:fontFamily="@font/segoeuil"
+
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

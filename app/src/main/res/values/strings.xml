@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">LectureDekho</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_sectional">Sectional Test</string>
+    <string name="menu_mock_test">My Active Packages</string>
+    <string name="menu_videos">Videos</string>
+    <string name="menu_me">Notifications</string>
+    <string name="menu_download">My Downloads</string>
+    <string name="menu_sch_result">Scholar Results</string>
+    <string name="menu_test">Test</string>
+    <string name="menu_doubts">Doubts</string>
+    <string name="menu_nav_profile">My Profile</string>
+    <string name="menu_my_test_series">My Test Series</string>
+    <string name="menu_buy_pack">Buy Packages</string>
+    <string name="menu_book_mark_study">My BookMark</string>
+    <string name="menu_my_test">My Test</string>
+    <string name="menu_my_querry">Doubts</string>
+    <string name="menu_my_teacher">My Teachers</string>
+    <string name="menu_my_student">My Students</string>
+    <string name="menu_daily_current_affairs">Daily Current Affairs</string>
+    <string name="menu_order">Orders History</string>
+    <string name="menu_ic_videos">Videos</string>
+    <string name="menu_setting">Wallets</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="menu_scholarship">Scholarship</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_rate_us">Rate us</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_daily_quizz">Daily Quiz</string>
+    <string name="buy_test">Buy Test \n Series</string>
+
+
+    <string name="notification_channel_id">default</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <!--  otp string-->
+    <string name="sending_sms">We\'ve sent an sms to</string>
+    <string name="inprogress">Verification in\nprogress</string>
+    <string name="verified">Verification successful</string>
+    <string name="failed">Verification failed</string>
+    <string name="entercode">Please enter the code you received</string>
+    <string name="title_activity_teacher_dashboard">TeacherDashboard</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="ins1">1. This test contains of 50 multiple choice question with
+        4 options each of which there is ONLY one correct
+        option.
+    </string>
+
+    <string name="ins2">2. Each Question has four options.
+        Each Correct answer carries 3 marks.
+    </string>
+    <!-- <string name="ins2">2. This test contains of 50 multiple choice question with
+      5 optiona each of which there is ONLY one correct
+      option.</string>-->
+
+
+    <string name="ins3">3. Each Wrong answer carries 1 negative mark.
+    </string>
+
+    <string name="ins4">4. An option once selected can not be changed.
+        Please Do not click an option unless you are sure of the answer
+        option.
+    </string>
+
+    <string name="chose_instruction">Instruction:choose the most suitable option from the following questions Give Right
+        / Answer
+    </string>
+
+
+    <string name="save_next">Save &#38; Next</string>
+    <string name="submit_explain">Submit &#38; Explanation</string>
+
+    <string name="finish">Finish</string>
+
+    <string name="video_bookmark">Video Bookmark</string>
+
+    <string name="please_type_the_verification_code_sent_to_n_9xxxxxxx19">Please type the verification code sent to\n</string>
+    <string name="verification_code">Verification Code</string>
+
+
+    <string name="search_here">Search for Chapters and Videos </string>
+    <string name="loading">loading...</string>
+    <string name="try_again">Try again</string>
+    <string name="unable_to_load_the_countries">Unable to load the Countries!</string>
+    <string name="voice_language">english</string>
+    <string name="details">Details</string>
+    <string name="search_your_country">Search your country</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">profile</string>
+    <string name="subjects">Subjects</string>
+    <string name="activity">Activity</string>
+    <string name="recently_learned_topics">Recently Learned Topics</string>
+    <string name="sahredata">sahredata</string>
+    <string name="registerd_mobile_number">Registered Mobile Number</string>
+    <string name="registered_email">Registered Email</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="learning_time">Learning Time</string>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_topic"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            android:weightSum="8"
+            >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:background="@drawable/vertical_line"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:background="@drawable/solid_dot"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:background="@drawable/vertical_line"/>
+    </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/str_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/segoeuil"
+            android:maxLines="1"
+            android:layout_weight="0.3"
+            android:lines="1"
+            android:gravity="center"
+            android:text="Topic"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:textSize="12sp" />
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:fontFamily="@font/segoeuil"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/dimen_5dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_weight=".5"
+    android:layout_marginStart="@dimen/dimen_5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lines="1"
+        android:fontFamily="@font/segoeuil"
+        android:text="Topic"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuil"
+        android:maxLines="1"
+        android:lines="1"
+        android:text="Topic"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/light_grey"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_videos"
+    android:layout_width="190dp"
+    android:layout_height="150dp"
+    android:layout_margin="5dp">
+
+    <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/video_thumbnails"
+        android:layout_width="190dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slider"
+        android:elevation="10dp"
+        app:sriv_left_top_corner_radius="4dip"
+        app:sriv_right_top_corner_radius="4dip" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_button"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_video"/>
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/video_thumbnails"
+        android:background="@drawable/dashboardtext_gradient"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:fontFamily="@font/segoeuil"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:text="Video title"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
+

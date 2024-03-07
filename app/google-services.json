@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "226812712637",
+    "project_id": "lecturedekho-2e25a",
+    "storage_bucket": "lecturedekho-2e25a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226812712637:android:2c9f5fa5e46324cf9ac9d4",
+        "android_client_info": {
+          "package_name": "com.lecturedekhoelearn.in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226812712637-488t8bqbgcv4a4voamgefsqq2eb0cosd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Tim-3OKQb3hPaclAx_aMBF5N2aHYr8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226812712637-488t8bqbgcv4a4voamgefsqq2eb0cosd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

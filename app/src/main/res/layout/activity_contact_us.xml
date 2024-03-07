@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_contact_us"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/gen_white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_can_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="You Can Call us On">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_call_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_can_call"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+917531858844"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="(9Am-6Pm)">
+
+        </TextView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ll_call_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_phone_symbol_of_an_auricular_inside_a_circle">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/call_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_call"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Call us "
+        android:textColor="@color/radio_button"
+        android:textStyle="bold">
+
+    </TextView>
+
+<!--
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_us"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="141dp"
+        android:gravity="centre"
+        android:text="OR ">
+
+    </TextView>-->
+
+    <TextView
+        android:id="@+id/write_to_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editfeedback"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="start"
+        android:layout_marginTop="141dp"
+        android:text="WRITE TO US "
+        android:visibility="visible">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editfeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editfeedback"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text=""
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <Button
+        android:id="@+id/btn_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="Contact us"
+        android:textColor="@color/White"
+        android:textStyle="bold">
+
+    </Button>
+
+</RelativeLayout>
+
+
+
+
+

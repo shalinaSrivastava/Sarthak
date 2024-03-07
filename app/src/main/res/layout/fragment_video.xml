@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.parentActivity.Video_player">
+
+
+
+    <FrameLayout
+        android:id="@+id/main_media_frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="#000000">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_below="@+id/main_media_frame"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/share_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:src="@drawable/share"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_margin="3dp"
+                android:textSize="@dimen/dimen_15sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bookmark_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:src="@drawable/bookmark"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmark"
+                android:layout_margin="3dp"
+                android:textSize="@dimen/dimen_15sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:src="@drawable/smily"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:layout_margin="3dp"
+                android:textSize="@dimen/dimen_15sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:visibility="gone"
+            android:background="@drawable/ic_share_black_24dp"
+            android:contentDescription="@string/sahredata" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/spinnerVideoDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</RelativeLayout>
